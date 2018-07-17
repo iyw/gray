@@ -6,6 +6,5 @@ fi
 if [ ! -d "${PREFIX}/nginx/servers" ]; then
     mkdir -p ${PREFIX}/nginx/servers
 fi
-    cp  ./conf/proxy.conf ${PREFIX}/nginx/conf/servers/
-    cp ./lua/* ${PREFIX}/nginx/lua/
-fi
+cp  ./conf/proxy.conf ${PREFIX}/nginx/conf/servers/
+cp ./lua/* ${PREFIX}/nginx/lua/
