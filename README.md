@@ -71,7 +71,10 @@ _M['new_upstream'] = new_upstream
 _M['redis_prefix'] = redis_prefix
 return _M
 ```
-## 设置接口灰度级别 (记录在redis中、可以动态的更改、其中PROXY: 为config.lua中 redis_prefix /abc为请求接口的uri 级别3 (10%几率路由到新系统))
+## 设置接口灰度级别
+说明:
+ 1、记录在redis中、可以动态的更改、其中PROXY: 为config.lua中redis_prefix;
+ 2、/abc为请求接口的uri 灰度级别为:3 (即10%几率路由到新系统,当然这个可以根据需求设置)
 ```
 127.0.0.1:6379> set PROXY:/abc 3
 OK
