@@ -61,6 +61,7 @@ function _M.getUpstreamByUriAndCount()
     local proxy_sys_level = config['proxy_sys_level']
     local old_upstream = config['old_upstream']
     local new_upstream = config['new_upstream']
+    local proxy_percent = config['proxy_percent']
     -- system level
     if proxy_sys_level == 2 then
         return old_upstream
