@@ -6,8 +6,18 @@
 本项目已在我们生产环境中使用
 
 ##### nginx.conf 配置文件
-```	
+```sh
 	//nginx.conf 文件中 加入lua包路径
 	//说明:1、 $PREFIX 为openresty安装路径
-	 lua_package_path "$PREFIX/nginx/lua;$PREFIX/lualib/?.lua;;";
+	lua_package_path "$PREFIX/nginx/lua;$PREFIX/lualib/?.lua;;";
+```
+比方: 我的openresty安装目录是 /usr/local/openresty
+只需在nginx.conf文件中 http域加入如下代码
+```sh
+   lua_package_path "/usr/local/openresty/nginx/lua/?.lua;/usr/local/openresty/lualib/?.lua;./?.lua;;";
+   include servers/*.conf;
+```
+安装
+```
+sudo ./make.sh
 ```
