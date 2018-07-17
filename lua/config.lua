@@ -32,7 +32,7 @@ local old_upstream = "proxy_old"
 local new_upstream = "proxy_new"
 
 -- redis key prefix
-local redis_prefix = ""
+local redis_prefix = "PROXY:"
 
 
 _M['proxy_sys_level'] = proxy_sys_level
