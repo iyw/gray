@@ -1,3 +1,4 @@
+## 该项目迁移至 https://github.com/bytearch/gray
 # gray灰度方案
 此模块是基于openresty开发(或者nginx安装了ngx_lua_module模块, 建议使用openresty)
 1. nginx+lua 开发的灰度方案、轻量级
